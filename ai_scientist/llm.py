@@ -19,6 +19,7 @@ AVAILABLE_LLMS = [
     "o1-2024-12-17",
     "deepseek-coder-v2-0724",
     "llama3.1-405b",
+    #"llama3.3-70b",
     # Anthropic Claude models via Amazon Bedrock
     "bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
     "bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0",
@@ -299,5 +300,11 @@ def create_client(model):
             api_key=os.environ["OPENROUTER_API_KEY"],
             base_url="https://openrouter.ai/api/v1"
         ), "meta-llama/llama-3.1-405b-instruct"
+    #elif model == "llama3.3-70b":
+    #    print(f"Using OpenAI API with {model}.")
+    #    return openai.OpenAI(
+    #        api_key=os.environ["OPENROUTER_API_KEY"],
+    #        base_url="https://openrouter.ai/api/v1"
+    #    ), "meta-llama/llama-3.3-70b-instruct"
     else:
         raise ValueError(f"Model {model} not supported.")

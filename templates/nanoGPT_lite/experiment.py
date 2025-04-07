@@ -320,7 +320,7 @@ def train(dataset="shakespeare_char", out_dir="run_0", seed_offset=0):
     # data
     gradient_accumulation_steps = 1
     batch_size = 64 if dataset == "shakespeare_char" else 32
-    block_size = 256  # context of up to 256 previous characters
+    block_size = 512 #256  # context of up to 256 previous characters
     # I/O
     eval_interval = 250 if dataset == "shakespeare_char" else 1000
     log_interval = 10 if dataset == "shakespeare_char" else 100
@@ -451,12 +451,17 @@ def train(dataset="shakespeare_char", out_dir="run_0", seed_offset=0):
     model_args["vocab_size"] = meta_vocab_size if meta_vocab_size is not None else 50304
     gptconf = GPTConfig(**model_args)
     model = GPT(gptconf)
+
     # crop down the model block size if desired, using model surgery
-    if block_size < model.config.block_size:
-        model.crop_block_size(block_size)
-        model_args["block_size"] = (
-            block_size  # so that the checkpoint will have the right value
-        )
+    ################################################# commented out to avoid AssertionError
+    #if block_size < model.config.block_size:
+    #    model.crop_block_size(block_size)
+    #    model_args["block_size"] = (
+    #        block_size  # so that the checkpoint will have the right value
+    #    )
+    
+    
+    
     model.to(device)
 
     # initialize a GradScaler. If enabled=False scaler is a no-op

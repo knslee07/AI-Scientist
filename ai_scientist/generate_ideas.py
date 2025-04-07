@@ -95,15 +95,18 @@ def generate_ideas(
         except json.JSONDecodeError:
             print("Error decoding existing ideas. Generating new ideas.")
 
+    # Reads seed_ideas.json (a file of initial “seed” ideas) into idea_str_archive.
     idea_str_archive = []
     with open(osp.join(base_dir, "seed_ideas.json"), "r") as f:
         seed_ideas = json.load(f)
     for seed_idea in seed_ideas:
         idea_str_archive.append(json.dumps(seed_idea))
 
+    #experiment.py is the code file
     with open(osp.join(base_dir, "experiment.py"), "r") as f:
         code = f.read()
 
+    #Reads the code from experiment.py and the main LLM prompt from prompt.json.
     with open(osp.join(base_dir, "prompt.json"), "r") as f:
         prompt = json.load(f)
 
@@ -117,6 +120,7 @@ def generate_ideas(
 
             msg_history = []
             print(f"Iteration 1/{num_reflections}")
+            # gets FIRST response from LLM
             text, msg_history = get_response_from_llm(
                 idea_first_prompt.format(
                     task_description=prompt["task_description"],
@@ -134,7 +138,11 @@ def generate_ideas(
             assert json_output is not None, "Failed to extract JSON from LLM output"
             print(json_output)
 
+            # SELF-REFLECTION
             # Iteratively improve task.
+            #If num_reflections > 1, it does a short loop of “improve the idea” by sending the LLM the idea_reflection_prompt. This prompt asks the LLM to refine the same JSON a few more times or declare “I am done.”
+            #After each reflection, again parse the JSON. If the LLM outputs “I am done,” then “Idea generation converged” and we break out early.
+
             if num_reflections > 1:
                 for j in range(num_reflections - 1):
                     print(f"Iteration {j + 2}/{num_reflections}")
@@ -161,7 +169,7 @@ def generate_ideas(
             idea_str_archive.append(json.dumps(json_output))
         except Exception as e:
             print(f"Failed to generate idea: {e}")
-            continue
+            continue 
 
     ## SAVE IDEAS
     ideas = []
@@ -180,8 +188,8 @@ def generate_next_idea(
         client,
         model,
         prev_idea_archive=[],
-        num_reflections=5,
-        max_attempts=10,
+        num_reflections=1, #5,
+        max_attempts=1, #10,
 ):
     idea_archive = prev_idea_archive
     original_archive_size = len(idea_archive)
@@ -294,6 +302,8 @@ def search_for_papers(query, result_limit=10, engine="semanticscholar") -> Union
                 "limit": result_limit,
                 "fields": "title,authors,venue,year,abstract,citationStyles,citationCount",
             },
+            # timeout added
+            timeout=10, 
         )
         print(f"Response Status Code: {rsp.status_code}")
         print(
@@ -428,6 +438,9 @@ def check_idea_novelty(
         papers_str = ""
 
         for j in range(max_num_iterations):
+            
+            print(f"Starting novelty iteration {j+1} for idea {idea['Name']}")
+                                    
             try:
                 text, msg_history = get_response_from_llm(
                     novelty_prompt.format(
@@ -445,6 +458,11 @@ def check_idea_novelty(
                     ),
                     msg_history=msg_history,
                 )
+                print(f"LLM response at iteration {j+1}: {text[:300]}...")  # show partial
+
+                ## CHECK IF NOVELTY DECISION MADE
+                ## the answer text will include the format, so we need to check if the decision is made
+                
                 if "decision made: novel" in text.lower():
                     print("Decision made: novel after round", j)
                     novel = True

@@ -13,6 +13,8 @@ from aider.io import InputOutput
 from aider.models import Model
 from datetime import datetime
 
+"""ai_scientist.generate_ideas, ai_scientist.llm, ai_scientist.perform_experiments, ai_scientist.perform_review, ai_scientist.perform_writeup: 
+Custom modules handling different stages of the AI Scientist pipeline."""
 from ai_scientist.generate_ideas import generate_ideas, check_idea_novelty
 from ai_scientist.llm import create_client, AVAILABLE_LLMS
 from ai_scientist.perform_experiments import perform_experiments
@@ -48,7 +50,7 @@ def parse_arguments():
     parser.add_argument(
         "--model",
         type=str,
-        default="claude-3-5-sonnet-20240620",
+        default="gpt-4o-2024-08-06", #"claude-3-5-sonnet-20240620",
         choices=AVAILABLE_LLMS,
         help="Model to use for AI Scientist.",
     )
@@ -109,6 +111,13 @@ def worker(
         improvement,
         gpu_id,
 ):
+    """Acts as a worker process in a multiprocessing setup. 
+    Each worker pulls ideas from a queue and processes them.
+    Sets the CUDA_VISIBLE_DEVICES environment variable to use the specified GPU.
+Enters a loop where it continuously fetches ideas from the queue.
+For each idea, it calls the do_idea function to process it.
+Logs the completion status of each idea.
+Exits when it receives a None signal in the queue."""
     os.environ["CUDA_VISIBLE_DEVICES"] = str(gpu_id)
     print(f"Worker {gpu_id} started.")
     while True:
@@ -141,6 +150,8 @@ def do_idea(
         improvement,
         log_file=False,
 ):
+    """Processes a single scientific idea through all stages: experimentation, writeup, review, and improvement.
+    """
     ## CREATE PROJECT FOLDER
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     idea_name = f"{timestamp}_{idea['Name']}"
@@ -179,8 +190,11 @@ def do_idea(
             main_model = Model("deepseek/deepseek-coder")
         elif model == "llama3.1-405b":
             main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
+        #elif model == "llama3.3-70b":
+        #    main_model = Model("openrouter/meta-llama/llama3.3-70b-instruct")
         else:
             main_model = Model(model)
+
         coder = Coder.create(
             main_model=main_model,
             fnames=fnames,
@@ -387,3 +401,13 @@ if __name__ == "__main__":
                 import traceback
                 print(traceback.format_exc())
     print("All ideas evaluated.")
+
+# o1-preview-2024-09-12
+# python -u launch_scientist.py --experiment nanoGPT --num-ideas 3 2>&1 --model "o1-preview-2024-09-12" | tee nanogpt_output_Feb5.txt
+
+# python -u launch_scientist.py --model "gpt-4o-2024-05-13" --skip-idea-generation --experiment nanoGPT_lite --num-ideas 1 2>&1 | tee nanogpt_lite_output.txt
+
+# python -u launch_scientist.py --skip-novelty-check --experiment grokking --num-ideas 1 2>&1 | tee nanogpt_lite_output.txt
+
+
+# python -u launch_scientist.py --model "llama3.1-405b" --experiment nanoGPT_lite --num-ideas 1 2>&1 | tee nanogpt_lite_output_Jan29.txt

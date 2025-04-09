@@ -1,3 +1,4 @@
+# Sakana uses the same client and model throughout the pipeline except for the review step (perform_review(client=openai.OpenAI())), where it uses gpt-4o-2024-05-13.
 import argparse
 import json
 import multiprocessing
@@ -318,7 +319,7 @@ if __name__ == "__main__":
 
     print(f"Using GPUs: {available_gpus}")
 
-    # Create client
+    # Create client returns the api and the model name, which is args.model itself.
     client, client_model = create_client(args.model)
 
     base_dir = osp.join("templates", args.experiment)
@@ -349,6 +350,7 @@ if __name__ == "__main__":
     if args.parallel > 0:
         print(f"Running {args.parallel} parallel processes")
         queue = multiprocessing.Queue()
+        #The queue is a shared FIFO (First-In-First-Out) queue that all worker processes will access. This is used to distribute ideas among the workers.
         for idea in novel_ideas:
             queue.put(idea)
 
@@ -356,7 +358,7 @@ if __name__ == "__main__":
         for i in range(args.parallel):
             gpu_id = available_gpus[i % len(available_gpus)]
             p = multiprocessing.Process(
-                target=worker,
+                target=worker, #multiprocessing.Process creates a new process for each worker #The target argument specifies a callable (function or method) that the process will execute when it starts.
                 args=(
                     queue,
                     base_dir,
@@ -375,7 +377,8 @@ if __name__ == "__main__":
 
         # Signal workers to exit
         for _ in range(args.parallel):
-            queue.put(None)
+            queue.put(None) # same number of None signals as the number of processes
+        # Wait for all processes to finish
 
         for p in processes:
             p.join()

@@ -282,6 +282,11 @@ If there is an area of study you would like **The AI Scientist** to explore, it 
 - `experiment.py` — This is the main script where the core content is. It takes an argument `--out_dir`, which specifies where it should create the folder and save the relevant information from the run.
 - `plot.py` — This script takes the information from the `run` folders and creates plots. The code should be clear and easy to edit.
 - `prompt.json` — Put information about your template here.
+- This is a prompt.json example:
+{
+    "system": "You are an ambitious AI researcher who is looking to publish a paper that will contribute significantly to the field.",
+    "task_description": "You are given the following file to work with, which trains small language models on a dataset of text at the character level."
+}
 - `seed_ideas.json` — Place example ideas here. You can also try to generate ideas without any examples and then pick the best one or two to put here.
 - `latex/template.tex` — We recommend using our LaTeX folder but be sure to replace the pre-loaded citations with ones that you expect to be more relevant.
 

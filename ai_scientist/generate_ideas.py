@@ -10,6 +10,11 @@ import requests
 from ai_scientist.llm import get_response_from_llm, extract_json_between_markers, create_client, AVAILABLE_LLMS
 
 S2_API_KEY = os.getenv("S2_API_KEY")
+# promt.json
+#{
+#    "system": "You are an ambitious AI researcher who is looking to publish a #paper that will contribute significantly to the field.",
+#    "task_description": "You are given the following file to work with, which #trains small language models on a dataset of text at the character level."
+#}
 
 idea_first_prompt = """{task_description}
 <experiment.py>

@@ -1,0 +1,7 @@
+Run 1 timed out after 7200 seconds
+Max iterations reached
+Not all experiments completed.
+Experiments failed for idea 20250127_110026_sparse_attention
+FINISHED IDEA
+Completed idea: sparse_attention, Success: False
+All ideas evaluated.

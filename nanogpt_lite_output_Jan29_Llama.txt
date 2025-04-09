@@ -1,0 +1,247 @@
+Using GPUs: [0]
+Using OpenAI API with llama3.1-405b.
+
+Generating idea 1/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 2/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 3/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 4/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 5/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 6/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 7/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 8/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 9/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 10/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 11/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 12/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 13/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 14/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 15/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 16/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 17/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 18/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 19/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 20/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 21/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 22/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 23/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 24/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 25/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 26/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 27/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 28/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 29/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 30/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 31/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 32/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 33/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 34/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 35/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 36/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 37/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 38/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 39/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 40/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 41/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 42/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 43/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 44/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 45/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 46/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 47/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 48/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 49/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 50/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Checking novelty of idea 0: adaptive_block_size
+Starting novelty iteration 1 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 2 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 3 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 4 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 5 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 6 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 7 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 8 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 9 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 10 for idea adaptive_block_size
+Error: 'NoneType' object is not subscriptable
+
+Checking novelty of idea 1: layerwise_learning_rates
+Starting novelty iteration 1 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 2 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 3 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 4 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 5 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 6 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 7 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 8 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 9 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 10 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+All ideas evaluated.

@@ -1,0 +1,41 @@
+Using GPUs: [0]
+Using OpenAI API with llama3.1-405b.
+
+Generating idea 1/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 2/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 3/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 4/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 5/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 6/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 7/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 8/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 9/50
+Iteration 1/3
+Failed to generate idea: 'NoneType' object is not subscriptable
+
+Generating idea 10/50
+Iteration 1/3

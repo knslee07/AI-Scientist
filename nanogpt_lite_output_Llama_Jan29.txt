@@ -1,0 +1,639 @@
+Using GPUs: [0]
+Using OpenAI API with llama3.1-405b.
+
+Generating idea 1/1
+Iteration 1/3
+{'Name': 'adaptive_embedding_sizes', 'Title': 'Adaptive Embedding Sizes: Efficient Token Representation in Transformer Models', 'Experiment': 'Modify the transformer.wte embedding layer to use adaptive embedding sizes based on token frequency or importance. Experiment with different adaptation strategies and evaluate the impact on model performance and capacity requirements.', 'Interestingness': 7, 'Feasibility': 5, 'Novelty': 6}
+Iteration 2/3
+{'Name': 'positional_embedding_sizes', 'Title': 'Positional Embedding Sizes: Efficient Token Representation in Transformer Models', 'Experiment': 'Modify the transformer.wte embedding layer to use smaller embedding sizes for tokens in earlier positions and larger embedding sizes for tokens in later positions. Evaluate the impact on model performance and capacity requirements.', 'Interestingness': 6, 'Feasibility': 6, 'Novelty': 5}
+Iteration 3/3
+{'Name': 'positional_embedding_sizes', 'Title': 'Positional Embedding Sizes: Efficient Token Representation in Transformer Models', 'Experiment': 'Modify the transformer.wte embedding layer to use a gradual increase in embedding size as the position in the input sequence increases. Evaluate the impact on model performance, capacity requirements, and ability to capture long-range dependencies.', 'Interestingness': 6, 'Feasibility': 6, 'Novelty': 5}
+Idea generation converged after 3 iterations.
+
+Checking novelty of idea 0: adaptive_block_size
+Starting novelty iteration 1 for idea adaptive_block_size
+LLM response at iteration 1: THOUGHT:
+This idea proposes dynamically adjusting the block size of a model during training, starting with a smaller block size and increasing it gradually. To determine if this idea is novel, I need to search for existing literature on adaptive block sizes or dynamic context window adjustment in tr...
+Response Status Code: 200
+Response Content: {"total": 9728, "offset": 0, "next": 10, "data": [{"paperId": "72169f3c4e17a2376ea171272d4a59ab214e53b1", "title": "Adaptive scale based u-shape transformer network for ischemic stroke lesion segmentation in CTP images", "abstract": "Ischemic stroke lesion segmentation in Computed Tomography Perfusion (CTP) images is crucial for the quantitative diagnosis of stroke. However, it remains a challenging problem due to the poor image quality of CTP and the complex appearance of the lesions. In this s
+Starting novelty iteration 2 for idea adaptive_block_size
+LLM response at iteration 2: THOUGHT:
+The search results provide various examples of adaptive or dynamic transformer models for different tasks, such as image super-resolution, segmentation, and speech recognition. However, none of these papers specifically focus on dynamically adjusting the block size of a transformer model du...
+Response Status Code: 200
+Response Content: {"total": 335, "offset": 0, "next": 10, "data": [{"paperId": "1525865f4ff008e2f1e2ecd975ad51571043019e", "title": "Enhancing Image Quality by Reducing Compression Artifacts Using Dynamic Window Swin Transformer", "abstract": "Video/image compression codecs utilize the characteristics of the human visual system and its varying sensitivity to certain frequencies, brightness, contrast, and colors to achieve high compression. Inevitably, compression introduces undesirable visual artifacts. As compre
+Starting novelty iteration 3 for idea adaptive_block_size
+LLM response at iteration 3: THOUGHT:
+The search results provide various examples of dynamic or adaptive transformer models, but none of them specifically focus on dynamically adjusting the block size of a transformer model during training for efficient training and long-range dependency learning. Some papers propose dynamic wi...
+Response Status Code: 200
+Response Content: {"total": 19, "offset": 0, "next": 10, "data": [{"paperId": "14c29362702ca25459e152e4ecf2b0592d218ecb", "title": "LRTD: A Low-rank Transformer with Dynamic Depth and Width for Speech Recognition", "abstract": "Though Transformer-based models have achieved great success in the automatic speech recognition (ASR) field, they are generally resource-hungry and computation-intensive which makes them difficult to deploy in resource-restricted devices. In this paper, we propose LRTD, a lightweight Trans
+Starting novelty iteration 4 for idea adaptive_block_size
+LLM response at iteration 4: THOUGHT:
+The search results provide various examples of dynamic or adaptive transformer models, but none of them specifically focus on dynamically adjusting the block size of a transformer model during training for efficient training and long-range dependency learning. Some papers propose dynamic wi...
+Response Status Code: 200
+Response Content: {"total": 0, "offset": 0}
+
+Error: 'NoneType' object is not iterable
+Starting novelty iteration 5 for idea adaptive_block_size
+LLM response at iteration 5: THOUGHT:
+The search results indicate that no papers were found that match the query. This suggests that the idea of dynamically adjusting the block size of a transformer model during training may be novel. However, to further verify this, I should try searching with different keywords or phrases to ...
+Response Status Code: 200
+Response Content: {"total": 156, "offset": 0, "next": 10, "data": [{"paperId": "5616cd91c5134d3ceaa578fd3c5521aed20c8f82", "title": "HMT: Hierarchical Memory Transformer for Long Context Language Processing", "abstract": "Transformer-based large language models (LLM) have been widely used in language processing applications. However, most of them restrict the context window that permits the model to attend to every token in the inputs. Previous works in recurrent models can memorize past tokens to enable unlimite
+Starting novelty iteration 6 for idea adaptive_block_size
+LLM response at iteration 6: THOUGHT:
+The search results do not provide any direct evidence of the idea of dynamically adjusting the block size of a transformer model during training. While some papers propose adaptive or dynamic transformer models, they do not specifically address the block size adjustment during training. The...
+Decision made: novel after round 5
+
+Checking novelty of idea 1: layerwise_learning_rates
+Starting novelty iteration 1 for idea layerwise_learning_rates
+LLM response at iteration 1: THOUGHT:
+The idea of layer-wise learning rates seems like an interesting approach to optimize training dynamics in transformer models. I'm not aware of any specific paper that has explored this exact concept, but it's possible that someone has already investigated this idea. To determine the novelty...
+Response Status Code: 200
+Response Content: {"total": 774, "offset": 0, "next": 10, "data": [{"paperId": "e09bfc955fbf66e0a042ca3f921108b823093b2e", "title": "Layer-Wise Learning Rate Optimization for Task-Dependent Fine-Tuning of Pre-Trained Models: An Evolutionary Approach", "abstract": "The superior performance of large-scale pre-trained models, such as Bidirectional Encoder Representations from Transformers (BERT) and Generative Pre-trained Transformer (GPT), has received increasing attention in both academic and industrial research a
+Starting novelty iteration 2 for idea layerwise_learning_rates
+LLM response at iteration 2: THOUGHT:
+The search results show that the concept of layer-wise learning rates has been explored in various papers, particularly in the context of transformer models and federated learning. However, most of these papers focus on adapting learning rates for specific tasks or datasets, rather than exp...
+Response Status Code: 200
+Response Content: {"total": 6, "offset": 0, "data": [{"paperId": "a4bea03d7a62917bf46ece2eb1e24f1fcacbc6ed", "title": "Learning to Schedule Learning rate with Graph Neural Networks", "abstract": "Recent decades have witnessed great development of stochastic optimization in training deep neural networks. Learning rate scheduling is one of the most important factors that influence the performance of stochastic optimizers like Adam. Traditional methods seek to find a relatively proper scheduling among a limited numb
+Starting novelty iteration 3 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 4 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 5 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 6 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 7 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 8 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 9 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 10 for idea layerwise_learning_rates
+Error: 'NoneType' object is not subscriptable
+
+Checking novelty of idea 2: positional_embedding_sizes
+Starting novelty iteration 1 for idea positional_embedding_sizes
+LLM response at iteration 1: THOUGHT:
+The idea proposes modifying the transformer.wte embedding layer to use a gradual increase in embedding size as the position in the input sequence increases. This is an interesting approach, but I'm not aware of any existing work that explores this specific idea. To determine the novelty of ...
+Response Status Code: 200
+Response Content: {"total": 6311, "offset": 0, "next": 10, "data": [{"paperId": "aaacf224fabf822ce4c4e7680429e29cce79108a", "title": "Scalable, Tokenization-Free Diffusion Model Architectures with Efficient Initial Convolution and Fixed-Size Reusable Structures for On-Device Image Generation", "abstract": "Vision Transformers and U-Net architectures have been widely adopted in the implementation of Diffusion Models. However, each architecture presents specific challenges while realizing them on-device. Vision Tra
+Starting novelty iteration 2 for idea positional_embedding_sizes
+LLM response at iteration 2: THOUGHT:
+The idea proposes modifying the transformer.wte embedding layer to use a gradual increase in embedding size as the position in the input sequence increases. None of the search results seem to directly address this specific idea. However, some papers discuss variable or dynamic embedding siz...
+Response Status Code: 200
+Response Content: {"total": 6857, "offset": 0, "next": 10, "data": [{"paperId": "cf55001259090bee2c3e9216418b25140e64a60c", "title": "TrEnD: A transformer-based encoder-decoder model with adaptive patch embedding for mass segmentation in mammograms.", "abstract": "BACKGROUND\nBreast cancer is one of the most prevalent malignancies diagnosed in women. Mammogram inspection in the search and delineation of breast tumors is an essential prerequisite for a reliable diagnosis. However, analyzing mammograms by radiologi
+Starting novelty iteration 3 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 4 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 5 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 6 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 7 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 8 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 9 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Starting novelty iteration 10 for idea positional_embedding_sizes
+Error: 'NoneType' object is not subscriptable
+Processing idea: adaptive_block_size
+2025-01-29 15:49:37
+*Starting idea: 20250129_154937_adaptive_block_size*
+2025-01-29 15:49:39
+*Starting Experiments*
+To implement the Adaptive Block Size experiment, I propose the following plan:                                          
+
+Run 1: Start with a smaller block size of 128 and gradually increase it to 256.                                         
+
+Run 2: Start with a smaller block size of 128 and gradually increase it to 512.                                         
+
+Run 3: Start with a smaller block size of 256 and gradually increase it to 512.                                         
+
+To implement this, we need to modify the train function in experiment.py to dynamically adjust the block size during    
+training.                                                                                                               
+
+Here are the SEARCH/REPLACE blocks:                                                                                     
+
+experiment.py                                                                                                           
+
+                                                                                                                        
+ <<<<<<< SEARCH                                                                                                         
+ block_size = 512 #256  # context of up to 256 previous characters                                                      
+ =======                                                                                                                
+ block_size = 128  # starting block size                                                                                
+ >>>>>>> REPLACE                                                                                                        
+                                                                                                                        
+
+experiment.py                                                                                                           
+
+                                                                                                                        
+ <<<<<<< SEARCH                                                                                                         
+     # model init                                                                                                       
+     model_args = dict(                                                                                                 
+         n_layer=n_layer,                                                                                               
+         n_head=n_head,                                                                                                 
+         n_embd=n_embd,                                                                                                 
+         block_size=block_size,                                                                                         
+         bias=bias,                                                                                                     
+         vocab_size=None,                                                                                               
+         dropout=dropout,                                                                                               
+     )  # start with model_args from command line                                                                       
+ =======                                                                                                                
+     # model init                                                                                                       
+     model_args = dict(                                                                                                 
+         n_layer=n_layer,                                                                                               
+         n_head=n_head,                                                                                                 
+         n_embd=n_embd,                                                                                                 
+         block_size=block_size,                                                                                         
+         bias=bias,                                                                                                     
+         vocab_size=None,                                                                                               
+         dropout=dropout,                                                                                               
+     )  # start with model_args from command line                                                                       
+     max_block_size = 256  # maximum block size                                                                         
+     block_size_step = 128  # block size increment                                                                      
+     block_size_schedule = [128, 256]  # block size schedule                                                            
+ >>>>>>> REPLACE                                                                                                        
+                                                                                                                        
+
+experiment.py                                                                                                           
+
+                                                                                                                        
+ <<<<<<< SEARCH                                                                                                         
+     iter_num = 0                                                                                                       
+     best_val_loss = 1e9                                                                                                
+ =======                                                                                                                
+     iter_num = 0                                                                                                       
+     best_val_loss = 1e9                                                                                                
+     block_size_idx = 0                                                                                                 
+ >>>>>>> REPLACE                                                                                                        
+                                                                                                                        
+
+experiment.py                                                                                                           
+
+                                                                                                                        
+ <<<<<<< SEARCH                                                                                                         
+     while True:                                                                                                        
+         # determine and set the learning rate for this iteration                                                       
+         lr = get_lr(iter_num) if decay_lr else learning_rate                                                           
+         for param_group in optimizer.param_groups:                                                                     
+             param_group["lr"] = lr                                                                                     
+ =======                                                                                                                
+     while True:                                                                                                        
+         # adjust block size                                                                                            
+         if iter_num % eval_interval == 0 and block_size_idx < len(block_size_schedule):                                
+             block_size = block_size_schedule[block_size_idx]                                                           
+             block_size_idx += 1                                                                                        
+             model_args["block_size"] = block_size                                                                      
+             model.crop_block_size(block_size)                                                                          
+         # determine and set the learning rate for this iteration                                                       
+         lr = get_lr(iter_num) if decay_lr else learning_rate                                                           
+         for param_group in optimizer.param_groups:                                                                     
+             param_group["lr"] = lr                                                                                     
+ >>>>>>> REPLACE                                                                                                        
+                                                                                                                        
+
+To run the experiment, use the following command:                                                                       
+
+                                                                                                                        
+ python experiment.py --out_dir=run_1                                                                                   
+                                                                                                                        
+
+Please apply these changes and run the experiment. I will then propose the next set of changes based on the results.    
+
+Tokens: 11k sent, 630 received.
+The LLM did not conform to the edit format.
+https://aider.chat/docs/troubleshooting/edit-errors.html
+
+# 1 SEARCH/REPLACE block failed to match!
+
+## SearchReplaceNoExactMatch: This SEARCH block failed to exactly match lines in experiment.py
+<<<<<<< SEARCH
+    while True:
+        # determine and set the learning rate for this iteration
+        lr = get_lr(iter_num) if decay_lr else learning_rate
+        for param_group in optimizer.param_groups:
+            param_group["lr"] = lr
+=======
+    while True:
+        # adjust block size
+        if iter_num % eval_interval == 0 and block_size_idx < len(block_size_schedule):
+            block_size = block_size_schedule[block_size_idx]
+            block_size_idx += 1
+            model_args["block_size"] = block_size
+            model.crop_block_size(block_size)
+        # determine and set the learning rate for this iteration
+        lr = get_lr(iter_num) if decay_lr else learning_rate
+        for param_group in optimizer.param_groups:
+            param_group["lr"] = lr
+>>>>>>> REPLACE
+
+Did you mean to match some of these actual lines from experiment.py?
+
+```
+    X, Y = get_batch("train")  # fetch the very first batch
+    og_t0 = time.time()
+    t0 = time.time()
+    local_iter_num = 0  # number of iterations in the lifetime of this process
+    raw_model = model
+    while True:
+
+        # determine and set the learning rate for this iteration
+        lr = get_lr(iter_num) if decay_lr else learning_rate
+        for param_group in optimizer.param_groups:
+            param_group["lr"] = lr
+
+        # evaluate the loss on train/val sets and write checkpoints
+        if iter_num % eval_interval == 0 and master_process:
+            losses = estimate_loss()
+```
+
+The SEARCH section must exactly match an existing block of lines including all white space, comments, indentation, 
+docstrings, etc
+
+# The other 3 SEARCH/REPLACE blocks were applied successfully.
+Don't re-send them.
+Just reply with fixed versions of the block above that failed to match.
+
+experiment.py                                                                                                           
+
+                                                                                                                        
+ <<<<<<< SEARCH                                                                                                         
+     X, Y = get_batch("train")  # fetch the very first batch                                                            
+     og_t0 = time.time()                                                                                                
+     t0 = time.time()                                                                                                   
+     local_iter_num = 0  # number of iterations in the lifetime of this process                                         
+     raw_model = model                                                                                                  
+     while True:                                                                                                        
+                                                                                                                        
+         # determine and set the learning rate for this iteration                                                       
+         lr = get_lr(iter_num) if decay_lr else learning_rate                                                           
+         for param_group in optimizer.param_groups:                                                                     
+             param_group["lr"] = lr                                                                                     
+ =======                                                                                                                
+     X, Y = get_batch("train")  # fetch the very first batch                                                            
+     og_t0 = time.time()                                                                                                
+     t0 = time.time()                                                                                                   
+     local_iter_num = 0  # number of iterations in the lifetime of this process                                         
+     raw_model = model                                                                                                  
+     while True:                                                                                                        
+                                                                                                                        
+         # adjust block size                                                                                            
+         if iter_num % eval_interval == 0 and block_size_idx < len(block_size_schedule):                                
+             block_size = block_size_schedule[block_size_idx]                                                           
+             block_size_idx += 1                                                                                        
+             model_args["block_size"] = block_size                                                                      
+             model.crop_block_size(block_size)                                                                          
+         # determine and set the learning rate for this iteration                                                       
+         lr = get_lr(iter_num) if decay_lr else learning_rate                                                           
+         for param_group in optimizer.param_groups:                                                                     
+             param_group["lr"] = lr                                                                                     
+ >>>>>>> REPLACE                                                                                                        
+                                                                                                                        
+
+Tokens: 12k sent, 292 received.
+Applied edit to experiment.py
+
+python experiment.py --out_dir=run_1
+experiment.py
+```python
+<<<<<<< SEARCH
+    X, Y = get_batch("train")  # fetch the very first batch
+    og_t0 = time.time()
+    t0 = time.time()
+    local_iter_num = 0  # number of iterations in the lifetime of this process
+    raw_model = model
+    while True:
+
+        # determine and set the learning rate for this iteration
+        lr = get_lr(iter_num) if decay_lr else learning_rate
+        for param_group in optimizer.param_groups:
+            param_group["lr"] = lr
+=======
+    X, Y = get_batch("train")  # fetch the very first batch
+    og_t0 = time.time()
+    t0 = time.time()
+    local_iter_num = 0  # number of iterations in the lifetime of this process
+    raw_model = model
+    while True:
+
+        # adjust block size
+        if iter_num % eval_interval == 0 and block_size_idx < len(block_size_schedule):
+            block_size = block_size_schedule[block_size_idx]
+            block_size_idx += 1
+            model_args["block_size"] = block_size
+            model.crop_block_size(block_size)
+        # determine and set the learning rate for this iteration
+        lr = get_lr(iter_num) if decay_lr else learning_rate
+        for param_group in optimizer.param_groups:
+            param_group["lr"] = lr
+>>>>>>> REPLACE
+```
+tokens per iteration will be: 8,192
+found vocab_size = 65 (inside ../../../data/shakespeare_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 10.65M
+num decayed parameter tensors: 26, with 10,690,944 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 4.2505, val loss 4.2421
+iter 0: loss 4.2493, time 44825.27ms
+iter 10: loss 3.2107, time 71.05ms
+iter 20: loss 2.8251, time 74.86ms
+iter 30: loss 2.6138, time 68.44ms
+iter 40: loss 2.5600, time 72.65ms
+iter 50: loss 2.5348, time 75.65ms
+iter 60: loss 2.5310, time 67.47ms
+iter 70: loss 2.5074, time 70.32ms
+iter 80: loss 2.4961, time 64.20ms
+iter 90: loss 2.4565, time 62.56ms
+iter 100: loss 2.4562, time 68.80ms
+iter 110: loss 2.4256, time 72.67ms
+iter 120: loss 2.3811, time 67.33ms
+iter 130: loss 2.3899, time 72.41ms
+iter 140: loss 2.3736, time 70.37ms
+iter 150: loss 2.3509, time 68.14ms
+iter 160: loss 2.3497, time 69.90ms
+iter 170: loss 2.2838, time 70.44ms
+iter 180: loss 2.2246, time 74.27ms
+iter 190: loss 2.2280, time 69.05ms
+iter 200: loss 2.1533, time 70.28ms
+iter 210: loss 2.1928, time 69.47ms
+iter 220: loss 2.1652, time 74.69ms
+iter 230: loss 2.1043, time 75.97ms
+iter 240: loss 2.0900, time 75.67ms
+/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Run 1 failed with return code 1
+Run failed with the following error /mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 0.2 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 0.5 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 1.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 2.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 4.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 8.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 16.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 32.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+
+
+tokens per iteration will be: 8,192
+found vocab_size = 65 (inside ../../../data/shakespeare_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 10.65M
+num decayed parameter tensors: 26, with 10,690,944 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 4.2505, val loss 4.2421
+iter 0: loss 4.2493, time 27895.01ms
+iter 10: loss 3.2107, time 77.51ms
+iter 20: loss 2.8251, time 86.15ms
+iter 30: loss 2.6137, time 78.55ms
+iter 40: loss 2.5599, time 77.11ms
+iter 50: loss 2.5348, time 83.47ms
+iter 60: loss 2.5309, time 89.90ms
+iter 70: loss 2.5071, time 80.04ms
+iter 80: loss 2.4947, time 74.59ms
+iter 90: loss 2.4571, time 64.32ms
+iter 100: loss 2.4581, time 81.45ms
+iter 110: loss 2.4257, time 83.49ms
+iter 120: loss 2.3763, time 80.97ms
+iter 130: loss 2.3776, time 87.96ms
+iter 140: loss 2.3736, time 79.27ms
+iter 150: loss 2.3397, time 79.36ms
+iter 160: loss 2.3297, time 82.42ms
+iter 170: loss 2.2838, time 80.28ms
+iter 180: loss 2.2211, time 86.56ms
+iter 190: loss 2.2245, time 78.54ms
+iter 200: loss 2.1512, time 74.16ms
+iter 210: loss 2.1895, time 72.39ms
+iter 220: loss 2.1732, time 79.78ms
+iter 230: loss 2.1014, time 79.28ms
+iter 240: loss 2.0882, time 74.57ms
+/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Run 1 failed with return code 1
+Run failed with the following error /mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 0.2 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 0.5 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 1.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 2.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 4.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 8.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 16.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 32.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+
+
+tokens per iteration will be: 8,192
+found vocab_size = 65 (inside ../../../data/shakespeare_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 10.65M
+num decayed parameter tensors: 26, with 10,690,944 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 4.2505, val loss 4.2421
+iter 0: loss 4.2493, time 27456.29ms
+iter 10: loss 3.2107, time 67.83ms
+iter 20: loss 2.8247, time 77.01ms
+iter 30: loss 2.6136, time 74.62ms
+iter 40: loss 2.5600, time 76.48ms
+iter 50: loss 2.5347, time 78.62ms
+iter 60: loss 2.5309, time 75.07ms
+iter 70: loss 2.5073, time 74.06ms
+iter 80: loss 2.4952, time 66.89ms
+iter 90: loss 2.4591, time 74.00ms
+iter 100: loss 2.4586, time 67.95ms
+iter 110: loss 2.4247, time 74.44ms
+iter 120: loss 2.3797, time 76.43ms
+iter 130: loss 2.3818, time 78.48ms
+iter 140: loss 2.3748, time 71.15ms
+iter 150: loss 2.3496, time 74.15ms
+iter 160: loss 2.3381, time 76.23ms
+iter 170: loss 2.2797, time 71.55ms
+iter 180: loss 2.2243, time 78.27ms
+iter 190: loss 2.2278, time 76.10ms
+iter 200: loss 2.1528, time 74.97ms
+iter 210: loss 2.1917, time 75.43ms
+iter 220: loss 2.1628, time 91.89ms
+iter 230: loss 2.0998, time 75.59ms
+iter 240: loss 2.0897, time 66.73ms
+/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Run 1 failed with return code 1
+Run failed with the following error /mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 0.2 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 0.5 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 1.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 2.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 4.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 8.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 16.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+Retrying in 32.0 seconds...
+litellm.APIError: APIError: OpenrouterException - 
+
+
+tokens per iteration will be: 8,192
+found vocab_size = 65 (inside ../../../data/shakespeare_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 10.65M
+num decayed parameter tensors: 26, with 10,690,944 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 4.2505, val loss 4.2421
+iter 0: loss 4.2493, time 27378.31ms
+iter 10: loss 3.2107, time 77.10ms
+iter 20: loss 2.8245, time 80.90ms
+iter 30: loss 2.6135, time 74.64ms
+iter 40: loss 2.5600, time 75.39ms
+iter 50: loss 2.5346, time 76.57ms
+iter 60: loss 2.5305, time 74.89ms
+iter 70: loss 2.5073, time 80.22ms
+iter 80: loss 2.4952, time 76.82ms
+iter 90: loss 2.4593, time 71.29ms
+iter 100: loss 2.4578, time 73.64ms
+iter 110: loss 2.4243, time 70.67ms
+iter 120: loss 2.3800, time 64.31ms
+iter 130: loss 2.3825, time 87.17ms
+iter 140: loss 2.3747, time 79.13ms
+iter 150: loss 2.3495, time 84.23ms
+iter 160: loss 2.3396, time 87.95ms
+iter 170: loss 2.2832, time 74.46ms
+iter 180: loss 2.2213, time 87.59ms
+iter 190: loss 2.2298, time 86.05ms
+iter 200: loss 2.1507, time 81.97ms
+iter 210: loss 2.1911, time 67.16ms
+iter 220: loss 2.1650, time 75.86ms
+iter 230: loss 2.1008, time 75.12ms
+iter 240: loss 2.0866, time 78.54ms
+/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Run 1 failed with return code 1
+Run failed with the following error /mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py:472: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == "float16"))
+Traceback (most recent call last):
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 711, in <module>
+    final_info, train_info, val_info = train(dataset, out_dir, seed_offset)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 533, in train
+    model.crop_block_size(block_size)
+  File "/mnt/c/Users/KWan/Documents/ai-scientist/results/nanoGPT_lite/20250129_154937_adaptive_block_size/experiment.py", line 243, in crop_block_size
+    assert block_size <= self.config.block_size
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Max iterations reached
+Not all experiments completed.
+Experiments failed for idea 20250129_154937_adaptive_block_size
+FINISHED IDEA
+Completed idea: adaptive_block_size, Success: False
+All ideas evaluated.
